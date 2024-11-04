@@ -1,0 +1,35 @@
+name: submissions_table
+description: "A new Flutter project."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.0-268.0.dev <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  get_it: any
+  built_value: ^8.4.2
+  built_collection: ^5.1.1
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  json_to_survey:
+    path: ../../
+  example_data:
+    path: ../example_data
+
+
+
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  # Enable generation of localized Strings from arb files.
+  generate: true
+

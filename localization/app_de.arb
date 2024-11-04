@@ -1,0 +1,311 @@
+{
+  "appTitle": "Dyfogen",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "loginViaInstituteText" : "Direkte Verbindung zur Datenbank",
+  "loginViaSSHTunnel" : "Über SSH Tunnel",
+  "databaseHostLabel" : "Datenbank-Host",
+  "databaseNameLabel" : "Datenbank-Name",
+  "userNameLabel" : "Benutzername",
+  "passwordLabel" : "Passwort",
+  "sendButtonText" : "absenden",
+  "validatorText" : "Bitte Text eingeben",
+  "selectSurveyTitle" : "Umfrage auswählen",
+  "errText" : "Fehler \nBitte Entwickler Bescheid geben. \nError: {error} \n{stackTrace}",
+  "@errText" : {
+    "placeholders" : {
+      "error" : {
+        "type" : "Object"
+      },
+      "stackTrace" :  {
+        "type" : "StackTrace"
+      }
+    }
+  },
+  "addSubmissionTitle" : "Umfrage hinzufügen",
+  "submissionTitleLabel" : "Umfragen-Titel",
+  "addButtonText" : "Hinzufügen",
+  "exactValueLabelText" : "Exakter Wert",
+  "selectSubmissionTitle" : "Umfrage-Einsendung wählen",
+  "createdByLabel" : "Erstellt von:",
+  "createdLabel" : "Erstellt:",
+  "deleteSubmissionQuestionText" : "{submissionTitle} wirklich löschen?",
+  "@deleteSubmissionQuestionText" : {
+    "placeholders" : {
+      "submissionTitle" : {
+        "type" : "String"
+      }
+    }
+  },
+  "deleteButtonText" : "Löschen",
+  "searchPlaceholderText" : "Suchen...",
+  "searchSubmissionLabel" : "Einsendung suchen",
+  "creatorText" : "Ersteller: ",
+  "noSelectionText" : "Keine Auswahl",
+  "textConcretisationLabelText" : "Textkonkretisierung",
+  "valueSpanLabelText" : "Spanne (von...bis)",
+  "quantityAndAraSpecificationText" : "Mengen-/Flächenvorgabe: ",
+  "pleaseEnterTextMessage" : "Bitte Text eingeben",
+  "exactDateLabelText" : "Exakte Datumsangabe",
+  "timeSpanLabelText" : "Zeitspanne (Beginn und/oder Ende angegeben)",
+  "fromDateLabelText" : "Von (nur Beginn angegeben)",
+  "toDateLabelText" : "Bis (nur Ende angegeben)",
+  "fromToDateLabelText" : "Von Bis (Beginn und Ende angegeben)",
+  "durationInHoursLabelText" : "Dauer in Stunden",
+  "dayAndMonthLabelText" : "Tag und Monat",
+  "onlyMonthLabelText" : "Nur Monat",
+  "fromMonthEditLabelText" : "Von (Monat)",
+  "toMonthEditLabelText" : "Bis (Monat)",
+  "fromDayEditLabelText" : "Von (Tag)",
+  "toDayEditLabelText" : "Bis (Tag)",
+  "dayEditLabelText" : "Tag",
+  "monthEditLabelText" : "Monat",
+  "timeLimitText" : "Zeitvorgabe: ",
+  "errNoAppStateFoundText" : "Kein AppState im 'context' gefunden",
+  "passedOnToText" : "Weitervererbt an:\n",
+  "notPassedOnButDefinedText" : "Nicht weitervererbt aber definiert in:\n",
+  "inheritedText" : "Geerbt:",
+  "inheritedFromText" : "Geerbt von:\n",
+  "canBeInheritedFromText" : "Kann geerbt werden von:\n",
+  "errChoiceQuestionAnswerDoesntExistText" : "Die Antwort mit dem Code {noChoiceQuestionAnswer} existiert nicht in der Umfragestruktur. Bitte ggf. migieren und diese Antwort löschen.",
+  "@errChoiceQuestionAnswerDoesntExistText" : {
+    "placeholders" : {
+      "noChoiceQuestionAnswer" : {
+        "type" : "String"
+      }
+    }
+  },
+  "errCheckParentAnswerInheritText" : "Diese nicht existierende Antwort wurde ursprünglich vom Vater {parentTitle} geerbt. Bitte auch im Vater überprüfen, ob diese Antwort fälschlicherweise aktiviert ist.",
+  "@errCheckParentAnswerInheritText" : {
+    "placeholders" : {
+      "parentTitle" : {
+        "type" : "String?"
+      }
+    }
+  },
+  "errIncorrectLinkingToParentText" : "Im Vater {parentTitle} ist die geerbte Antwort entweder nicht selektiert oder die Vererbung dieser Umfrage zur Vater-Umfrage wurde ganz aufgelöst. Bitte Verlinkung zum Vater überprüfen. Falls die Verlinkung besteht und oder wiederhergestellt wurde, und dieser Fehler dennoch erscheint, bitte diese Selektion entfernen, um Inkosistenzen zu vermeiden.",
+  "@errIncorrectLinkingToParentText" : {
+    "placeholders" : {
+      "parentTitle" : {
+        "type" : "String?"
+      }
+    }
+  }, 
+  "errInheritedAnswerWithoutSubmissionText" : "Die Einsendungen: {parentTitle} erben diese Antwort, obwohl sie in diesen Einsendungen gar nicht mehr selektiert ist.",
+  "@errInheritedAnswerWithoutSubmissionText" : {
+    "placeholders" : {
+      "parentTitle" : {
+        "type" : "String?"
+      }
+    }
+  },
+  "freeText" : "Freitext",
+  "cautionConcretisationOfParentText" :  "Achtung. Dies sind die Konkretisierungen des Vaters. Änderungen hier werden auch beim Vater geändert. Sollen die Angaben des Vaters vom überschrieben werden, ohne die Angaben des Vaters zu ändern? Dann hier im Kind eine weitere Konkretisierung hinzufügen, die vom Vater abweicht.",
+  "errNoChoiceQuestionAnswerServiceFoundText" : "Kein ChoiceQuestionAnswerService im context gefunden",
+  "deleteAnswerTitle" : "Die Antwort {answerTitle} wirklich löschen?",
+  "@deleteAnswerTitle" : {
+    "placeholders" : {
+      "answerTitle" : {
+        "type" : "String"
+      }
+    }
+  },
+  "deleteAnswerContentText" : "Die Antwort {answerTitle} wird gelöscht, doch sie enthält Konkretisierungen. Durch die Löschung werden auch diese Konkretisierungen gelöscht. Soll die Antwort wirklich gelöscht und damit die Konkretisierungen gelöscht werden?",
+  "@deleteAnswerContentText" : {
+    "placeholders" : {
+      "answerTitle" : {
+        "type" : "String"
+      }
+    }
+  },
+  "acceptDeleteTitle" : "Antwort und dessen Konkretisierungen löschen", 
+  "cancelDeleteTitle" : "Löschen abbrechen",
+  "concretisationsAndAnsweredSubQuestionsText" : "Konkretisierungen und beantwortete Unterfragen",
+  "concretisationText" : "Konkretisierungen",
+  "answeredSubQuestionsText" : "beantwortete Unterfragen",
+  "concretisationsMovedAndSubQuestionsDeletedText" : "die Konkretisierungen in {answerToReplaceWithTitle} verschoben und die beantwortete Unterfragen gelöscht",
+  "@concretisationsMovedAndSubQuestionsDeletedText" : {
+    "placeholders" : {
+      "answerToReplaceWithTitle" : {
+        "type" : "String?"
+      }
+    }
+  },
+  "concretisationsMovedText" : "die Konkretisierungen in {answerToReplaceWithTitle} verschoben",
+  "@concretisationsMovedText" : {
+    "placeholders" : {
+      "answerToReplaceWithTitle" : {
+        "type" : "String?"
+      }
+    }
+  },
+  "deleteAnsweredSubQuestions" : "die beantworteten Unterfragen gelöscht",
+  "concretisationsMovedAndSubQuestionsDeletedTitle" : "Konkretisierungen verschieben und Unterantworten löschen",
+  "concretisationsMovedTitle" : "Konkretisierungen verschieben",
+  "deleteSubAnswersTitle" : "Unterantworten löschen",
+  "replaceAnswersQuestion" : "Die Antwort {answerToReplaceOrDelete} wirklich mit {replaceAnswer} ersetzen?",
+  "@replaceAnswersQuestion" : {
+    "placeholders" : {
+      "answerToReplaceOrDelete" : {
+        "type" : "String?"
+      },
+      "replaceAnswer" : {
+        "type" : "String?"
+      }
+    }
+  },
+  "replaceFollowUpMessagesText" : "Die Antwort {answerToReplaceOrDelete} wird mit {replaceAnswer} ersetzt, doch sie enthält {contextMessage}.",
+  "@replaceFollowUpMessagesText" : {
+    "placeholders" : {
+      "answerToReplaceOrDelete" : {
+        "type" : "String?"
+      },
+      "replaceAnswer" : {
+        "type" : "String?"
+      },
+      "contextMessage" : {
+        "type" : "String"
+      }
+    }
+  },
+  "replaceAndCreateAcceptTitle" : "Ersetzen und {createAcceptTitleContext}",
+  "@replaceAndCreateAcceptTitle" : {
+    "placeholders" : {
+      "createAcceptTitleContext" : {
+        "type" : "String"
+      }
+    }
+  },
+  "abortReplaceCancelTitle" : "Ersetzen abbrechen",
+  "confirmButtonToolTipText" : "Auswahl übernehmen",
+  "errInFormText" : "Fehler im Formular.",
+  "noSubmissionSelectedText" : " keine Einsendung gewählt",
+  "errIncorrectInherit" : "Beim Erben ist etwas schief gelaufen. Bitte diese Nachricht dem Entwickler zeigen. Details: {error}",
+  "@errIncorrectInherit" : {
+    "placeholders" : {
+      "error" : {
+        "type" : "Object"
+      }
+    }
+  },
+  "errNoViewDefined" : "Für {question} ist keine View definiert.",
+  "@errNoViewDefined" : {
+    "placeholders" : {
+      "question" : {
+        "type" : "String"
+      }
+    }
+  },
+  "unlinkSubmissionInheritTitle" : "Die Vererbung zur Einsendung {linkedSubmission} wirklich aufheben?",
+  "@unlinkSubmissionInheritTitle" : {
+    "placeholders" : {
+      "linkedSubmission" : {
+        "type" : "String"
+      }
+    }
+  },
+  "unlinkSubmissionInheritContentText" : "Die Vererbung zur Einsendung {linkedSubmission} wirklich aufheben? Von dieser Einsendung werden möglicherweise Eigenschaften geerbt. Sollen geerbten Eigenschaften ebenfalls entfernt werden?",
+  "@unlinkSubmissionInheritContentText" : {
+    "placeholders" : {
+      "linkedSubmission" : {
+        "type" : "String"
+      }
+    }
+  },
+  "unlinkSubmissionInheritAcceptTitle" : "Vererbung aufheben und geerbte Eigenschaften entfernen",
+  "unlinkSubmissionInheritCancelTitle" : "Abbrechen",
+  "hiddenBySelectionsText" : "ist durch die Selektionen der vorherigen Auswahlfelder ausgeblendet.",
+  "questionRequiredValuesText" : "{question} muss einen der folgenden Werte enthalten: ",
+  "@questionRequiredValuesText" : {
+    "placeholders" : {
+      "question" : {
+        "type" : "String"
+      }
+    }
+  },
+  "questionCantCotainValuesText" : "{question} darf keinen der folgenden Werte enthalten: ",
+  "@questionCantCotainValuesText" : {
+    "placeholders" : {
+      "question" : {
+        "type" : "String"
+      }
+    }
+  },
+  "noConditionDefinedText" : "Es ist keine Bedingung hinterlegt.",
+  "errConditionsText" : "Eine Condition sollte vom Typ ContainsAnyOf, ContainsNoneOf, CheckAllConditions oder null sein. Ein Chart für eine Condition vom Typ {runtimeType} ist nicht definiert.",
+  "@errConditionsText" : {
+    "placeholders" : {
+      "runtimeType" : {
+        "type" : "Type"
+      }
+    }
+  },
+  "questionContainsErrorText" : "Die Frage hat Fehler",
+  "singleChoiceQuestionText" : "Die Single-Choice Frage ",
+  "singleChoiceQuestionNeedsAnswerText" : "muss eine Antwort enthalten. Doch sie ist leer.",
+  "containsAnswerText" : " enthält die Antwort",
+  "containsMultipleAnswersText" : " enthält die Antworten ",
+  "severalTimesText" : " mehrfach.",
+  "mustText" : " muss ",
+  "exactlyOneText" : "genau eine",
+  "haveAnswerText" : " Antwort enthalten.",
+  "theQuestionText" : "Die Frage ",
+  "hasOneAnswerButText" : " hat eine Antwort, doch die Frage ist eine Unter-Frage von ",
+  "thisOptionsAreDeactivatedText" : ". Diese Fragen bzw. Antworten sind deaktiviert.",
+  "theConditionForText" : "Die Bedingung für ",
+  "isNotSatisfiedButText" : " ist nicht erfüllt, doch sie hat die Unter-Antwort: ",
+  "abortText" : "Abbrechen",
+  "whatShouldHappenWithInheritanceText" : "Was soll mit der Weitervererbung dieser Antwort geschehen",
+  "theAnswerText" : "Die Antwort ",
+  "willBeInheritedText" : " wird an ",
+  "whatShouldHappenText" : " weitervererbt. Was soll geschehen?",
+  "deleteWithLineBreakText" : "Löschen\n",
+  "inText" : "In ",
+  "theAnswerWithLineBreaksText" : "\n\ndie Antwort ",
+  "deleteWithSpaceText" : " löschen.",
+  "keepAnswerText" : "Behalten\n",
+  "indicateThatInheritanceIsNotValidText" : "behalten und einen Fehler anzeigen, dass die Vererbung nicht valide ist.",
+  "errorTitle" : "Fehler",
+  "selectAllText" : "Alles auswählen",
+  "deselectAllText" : "Alles abwählen",
+  "containsExactlyText": "enthält genau die folgenden",
+  "containsAnyOfText": "enthält eines der folgenden",
+  "whichPropertiesShouldBeInheritedText" : "Welche Eigenschaften sollen geerbt werden?",
+  "applyPropertiesText" : "Eigenschaften übernehmen",
+  "sameChangeInChildrenText" : "Gleiche Änderung in Kindern vornehmen\n",
+  "alsoText" : "\n\nebenfalls ",
+  "withText" : " mit ",
+  "replaceText" : " ersetzen.",
+  "renameSubmissionTitle" : "{submissionTitle} umbenennen in ...",
+  "@renameSubmissionTitle" : {
+    "placeholders" : {
+      "submissionTitle" : {
+        "type" : "String"
+      }
+    }
+  },
+  "newTitleText" : "Neuer Titel",
+  "renameText" : "Umbenennen",
+  "copyOfSubmissionTitle" : "Kopie von {submissionTitle}",
+  "@copyOfSubmissionTitle" : {
+    "placeholders" : {
+      "submissionTitle" : {
+        "type" : "String"
+      }
+    }
+  },
+  "duplicateMeasureTitle" : "Einsendung {submissionTitle} duplizieren!",
+  "@duplicateMeasureTitle" : {
+    "placeholders" : {
+      "submissionTitle" : {
+        "type" : "String"
+      }
+    }
+  },
+  "submissionTitleForDuplicateText" : "Einsendungs-Titel für das Duplikat",
+  "duplicateText" : "Duplizieren",
+  "noSurveyPathInContextFoundText" : "Kein SurveyPath-Objekt in context gefunden.",
+  "noSelectedSubmissionTypeInContextFoundText" : "Kein SelectedSubmissionType-Objekt in context gefunden.",
+  "noSelectedSubmissionInContextFoundText" : "Kein SelectedSubmission-Objekt in context gefunden."        
+} 

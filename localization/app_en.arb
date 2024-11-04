@@ -1,0 +1,312 @@
+{
+  "appTitle": "json_to_survey",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "loginViaInstituteText" : "Direct connection to database",
+  "loginViaSSHTunnel" : "Via SSH tunnel",
+  "databaseHostLabel" : "Database Host",
+  "databaseNameLabel" : "Database Name",
+  "userNameLabel" : "User Name",
+  "passwordLabel" : "Password",
+  "sendButtonText" : "send",
+  "validatorText" : "Please enter text",
+  "selectSurveyTitle": "Select survey",
+  "errText" : "Error \nPlease inform the developer. \nError: {error} \n{stackTrace}",
+  "@errText" : {
+    "placeholders" : {
+      "error" : {
+        "type" : "Object"
+      },
+      "stackTrace" :  {
+        "type" : "StackTrace"
+      }
+    }
+  },
+  "addSubmissionTitle" : "Add submission",
+  "submissionTitleLabel" : "submission title",
+  "addButtonText" : "add",  
+  "selectSubmissionTitle" : "select submission",
+  "createdByLabel" : "Created by:",
+  "createdLabel" : "Created:",
+  "deleteSubmissionQuestionText" : "Delete {submissionTitle}?",
+  "@deleteSubmissionQuestionText" : {
+    "placeholders" : {
+      "submissionTitle" : {
+        "type" : "String"
+      }
+    }
+  },  
+  "deleteButtonText" : "Delete",
+  "exactValueLabelText" : "exact value",
+  "searchPlaceholderText" : "search for...",
+  "searchSubmissionLabel" : "Search submission",
+  "creatorText" : "Creator: ",
+  "noSelectionText" : "No selection", 
+  "valueSpanLabelText" : "Range (From...To)",
+  "textConcretisationLabelText" : "Text concretisation",
+  "quantityAndAraSpecificationText" : "Quantity/area specification: ",
+  "pleaseEnterTextMessage" : "Please enter text",
+  "exactDateLabelText" : "Exact date",
+  "timeSpanLabelText" : "Time period (start and/or end specified)",
+  "fromDateLabelText" : "From (start only)",
+  "toDateLabelText" : "Until (only end specified)",
+  "fromToDateLabelText" : "From To (start and end specified)",
+  "durationInHoursLabelText" : "Duration in hours",
+  "dayAndMonthLabelText" : "Day and month",
+  "onlyMonthLabelText" : "Just month",
+  "fromMonthEditLabelText" : "From (month)",
+  "toMonthEditLabelText" : "To (month)",
+  "fromDayEditLabelText" : "From (day)",
+  "toDayEditLabelText" : "To (day)",
+  "dayEditLabelText" : "Day",
+  "monthEditLabelText" : "Month",
+  "timeLimitText" : "Time span",
+  "errNoAppStateFoundText" : "No AppState found in this context",
+  "passedOnToText" : "Passed on to:\n",
+  "notPassedOnButDefinedText" : "Not passed on but defined in:\n",
+  "inheritedText" : "Inherited:",
+  "inheritedFromText" : "Inherited from:\n",
+  "canBeInheritedFromText" : "Can be inherited from:\n",
+  "errChoiceQuestionAnswerDoesntExistText" : "The answer with the code {noChoiceQuestionAnswer} does not exist in the survey structure. Please migrate if necessary and delete this answer.",
+  "@errChoiceQuestionAnswerDoesntExistText" : {
+    "placeholders" : {
+      "noChoiceQuestionAnswer" : {
+        "type" : "String"
+      }
+    }
+  },
+  "errCheckParentAnswerInheritText" : "This non-existent response was originally inherited from the parent {parentTitle}. Please also check in the parent whether this response is incorrectly activated.",
+  "@errCheckParentAnswerInheritText" : {
+    "placeholders" : {
+      "parentTitle" : {
+        "type" : "String?"
+      }
+    }
+  },
+  "errIncorrectLinkingToParentText" : "In the father {parentTitle}, the inherited answer is either not selected or the inheritance of this submission to the father submission has been completely cancelled. Please check the link to the father. If the link exists and or has been restored and this error still appears, please remove this selection to avoid inconsistencies.",
+  "@errIncorrectLinkingToParentText" : {
+    "placeholders" : {
+      "parentTitle" : {
+        "type" : "String?"
+      }
+    }
+  },
+  "errInheritedAnswerWithoutSubmissionText" : "The surveys: {parentTitle} inherit this answer, although it is no longer selected in this submission.",
+  "@errInheritedAnswerWithoutSubmissionText" : {
+    "placeholders" : {
+      "parentTitle" : {
+        "type" : "String?"
+      }
+    }
+  },
+  "freeText" : "Free text",
+  "cautionConcretisationOfParentText" : "Attention. These are the concretisations of the parent. Changes here are also changed for the parent. Do you want to overwrite the parents details without changing the parents details? Then add a further specification here in the child that differs from the parents.",
+  "errNoChoiceQuestionAnswerServiceFoundText" : "No ChoiceQuestionAnswerService found in context",
+  "deleteAnswerTitle" : "Really delete answer {answerTitle}?",
+  "@deleteAnswerTitle" : {
+    "placeholders" : {
+      "answerTitle" : {
+        "type" : "String"
+      }
+    }
+  },
+  "deleteAnswerContentText" : "The answer {answerTitle} is deleted, but it contains concretisations. The deletion also deletes these concretisations. Should the answer really be deleted and thus the concretisations deleted?",
+  "@deleteAnswerContentText" : {
+    "placeholders" : {
+      "answerTitle" : {
+        "type" : "String"
+      }
+    }
+  },
+  "acceptDeleteTitle" : "Delete answer and its concretisations", 
+  "cancelDeleteTitle" : "Cancel delete",
+  "concretisationsAndAnsweredSubQuestionsText" : "Concretisations and answered sub-questions",
+  "concretisationText" : "Concretisation",
+  "answeredSubQuestionsText" : "Answered sub-questions",
+  "concretisationsMovedAndSubQuestionsDeletedText" : "moved the concretisations to {answerToReplaceWithTitle} and deleted the answered subquestions",
+  "@concretisationsMovedAndSubQuestionsDeletedText" : {
+    "placeholders" : {
+      "answerToReplaceWithTitle" : {
+        "type" : "String?"
+      }
+    }
+  },
+  "concretisationsMovedText" : "moved the concretisations to {answerToReplaceWithTitle}",
+  "@concretisationsMovedText" : {
+    "placeholders" : {
+      "answerToReplaceWithTitle" : {
+        "type" : "String?"
+      }
+    }
+  },
+  "deleteAnsweredSubQuestions" : "the answered sub-questions deleted",
+  "concretisationsMovedAndSubQuestionsDeletedTitle" : "Move concretisations and delete sub-answers",
+  "concretisationsMovedTitle" : "Move concretisations",
+  "deleteSubAnswersTitle" : "Delete sub-answers",
+  "replaceAnswersQuestion" : "Really replace the answer {answerToReplaceOrDelete} with {replaceAnswer}?",
+  "@replaceAnswersQuestion" : {
+    "placeholders" : {
+      "answerToReplaceOrDelete" : {
+        "type" : "String?"
+      },
+      "replaceAnswer" : {
+        "type" : "String?"
+      }
+    }
+  },
+  "replaceFollowUpMessagesText" : "The response {answerToReplaceOrDelete} is replaced with {replaceAnswer}, but it contains {contextMessage}.",
+  "@replaceFollowUpMessagesText" : {
+    "placeholders" : {
+      "answerToReplaceOrDelete" : {
+        "type" : "String?"
+      },
+      "replaceAnswer" : {
+        "type" : "String?"
+      },
+      "contextMessage" : {
+        "type" : "String"
+      }
+    }
+  },
+  "replaceAndCreateAcceptTitle" : "Replace and {createAcceptTitleContext}",
+  "@replaceAndCreateAcceptTitle" : {
+    "placeholders" : {
+      "createAcceptTitleContext" : {
+        "type" : "String"
+      }
+    }
+  },
+  "abortReplaceCancelTitle" : "Abort replace",
+  "confirmButtonToolTipText" : "Accept selection",
+  "errInFormText" : "Error in form",
+  "noSubmissionSelectedText" : " no submission selected",
+  "errIncorrectInherit" : "Something went wrong with the inherit. Please show this message to the developer. Details: {error}",
+  "@errIncorrectInherit" : {
+    "placeholders" : {
+      "error" : {
+        "type" : "Object"
+      }
+    }
+  },
+  "errNoViewDefined" : "No View defined for {question}.",
+  "@errNoViewDefined" : {
+    "placeholders" : {
+      "question" : {
+        "type" : "String"
+      }
+    }
+  },
+  "unlinkSubmissionInheritTitle" : "Cancel the inherit for {linkedSubmission}?",
+  "@unlinkSubmissionInheritTitle" : {
+    "placeholders" : {
+      "linkedSubmission" : {
+        "type" : "String"
+      }
+    }
+  },
+  "unlinkSubmissionInheritContentText" : "Cancel the inheritance for the {linkedSubmission} submission? Properties may be inherited from this submission. Should inherited properties also be removed?",
+  "@unlinkSubmissionInheritContentText" : {
+    "placeholders" : {
+      "linkedSubmission" : {
+        "type" : "String"
+      }
+    }
+  },
+  "unlinkSubmissionInheritAcceptTitle" : "Cancelling inheritance and removing inherited properties",
+  "unlinkSubmissionInheritCancelTitle" : "Cancel",
+  "hiddenBySelectionsText" : "is hidden by the selections in the previous selection fields.",
+  "questionRequiredValuesText" : "{question} must contain one of the following values: ",
+  "@questionRequiredValuesText" : {
+    "placeholders" : {
+      "question" : {
+        "type" : "String"
+      }
+    }
+  },
+  "questionCantCotainValuesText" : "{question} must not contain any of the following values: ",
+  "@questionCantCotainValuesText" : {
+    "placeholders" : {
+      "question" : {
+        "type" : "String"
+      }
+    }
+  },
+  "noConditionDefinedText" : "No condition is defined.",
+  "errConditionsText" : "A condition should be of type ContainsAnyOf, ContainsNoneOf, CheckAllConditions or null. A chart for condition of type {runtimeType} is not defined.",
+  "@errConditionsText" : {
+    "placeholders" : {
+      "runtimeType" : {
+        "type" : "Type"
+      }
+    }
+  },
+  "questionContainsErrorText" : "Questions has errors",
+  "singleChoiceQuestionText" : "The Single-Choice question ",
+  "singleChoiceQuestionNeedsAnswerText" : "must contain an answer. But its empty.",
+  "containsAnswerText" : " contains answer",
+  "containsMultipleAnswersText" : " contains multiple answers",
+  "severalTimesText" : "several times.",
+  "mustText" : " must contain",
+  "exactlyOneText" : "exactly one",
+  "haveAnswerText" : " answer.",
+  "theQuestionText" : "The question ",
+  "hasOneAnswerButText" : " has an answer, but the question is a sub-question of ",
+  "thisOptionsAreDeactivatedText" : ". These questions and answers are deactivated.",
+  "theConditionForText" : "The condition for ",
+  "isNotSatisfiedButText" : " is not fulfilled, but it has the sub-answer: ",
+  "abortText" : "cancel",
+  "whatShouldHappenWithInheritanceText" : "What should happen to the inheritance of this answer?",
+  "theAnswerText" : "The answer ",
+  "willBeInheritedText" : " is passed on to ",
+  "whatShouldHappenText" : ". What should happen?",
+  "deleteWithLineBreakText" : "Delete\n",
+  "inText" : "In ",
+  "theAnswerWithLineBreaksText" : "\n\nthe answer ",
+  "deleteWithSpaceText" : " will be deleted.",
+  "keepAnswerText" : "Keep answer\n",
+  "indicateThatInheritanceIsNotValidText" : " and indicate an error that the inheritance is not valid.",
+  "errorTitle" : "Error",
+  "selectAllText" : "Select all",
+  "deselectAllText" : "Deselect all",
+  "containsExactlyText": "contains exactly the following",
+  "containsAnyOfText": "contains one of the following",
+  "whichPropertiesShouldBeInheritedText" : "Which properties should be inherited?",
+  "applyPropertiesText" : "Apply properties",
+  "sameChangeInChildrenText" : "Make the same change in children\n",
+  "alsoText" : "\n\nalso replace ",
+  "withText" : " with ",
+  "replaceText" : ".",
+  "renameSubmissionTitle" : "Rename {submissionTitle} in ...",
+  "@renameSubmissionTitle" : {
+    "placeholders" : {
+      "submissionTitle" : {
+        "type" : "String"
+      }
+    }
+  },
+  "newTitleText" : "New title",
+  "renameText" : "Rename",
+  "copyOfSubmissionTitle" : "Copy of {submissionTitle}",
+  "@copyOfSubmissionTitle" : {
+    "placeholders" : {
+      "submissionTitle" : {
+        "type" : "String"
+      }
+    }
+  },
+  "duplicateSubmissionTitle" : "Duplicate submission {submissionTitle}!",
+  "@duplicateSubmissionTitle" : {
+    "placeholders" : {
+      "submissionTitle" : {
+        "type" : "String"
+      }
+    }
+  },
+  "submissionTitleForDuplicateText" : "Submission title for the duplicate",
+  "duplicateText" : "Duplicate",
+  "noSurveyPathInContextFoundText" : "No SurveyPath object in context found.",
+  "noSelectedSurveyTypeInContextFoundText" : "No SelectedSurveyType object in context found.",
+  "noSelectedSubmissionInContextFoundText" : "No SelectedSubmission object in context found."
+}
+

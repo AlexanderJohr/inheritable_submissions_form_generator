@@ -1,0 +1,54 @@
+name: json_to_survey
+description: A new Flutter project.
+
+# Prevent accidental publishing to pub.dev.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  antlr4: ^4.11.1
+  built_collection: ^5.1.1
+  collection: ^1.16.0
+  dartssh2: ^2.7.3
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  json_editor: ^0.0.8
+  mockito: ^5.3.2
+  postgres: ^3.4.0
+  rxdart: ^0.27.7
+  sqlite3: ^2.4.1+1
+  sqlite3_flutter_libs: ^0.5.20
+  flutter_markdown: any
+  two_dimensional_scrollables: ^0.3.1
+  dotenv: any
+  get_it: any
+  example_data:
+    path: ./examples/example_data
+  submissions_table:
+    path: ./examples/submissions_table
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+  built_value: ^8.4.2
+  built_value_generator: ^8.4.2
+  build_runner: ^2.3.2
+  lints: ^2.0.1
+
+flutter:
+  uses-material-design: true
+
+  # Enable generation of localized Strings from arb files.
+  generate: true
+
+  assets:
+    # Add assets from the images directory to the application.
+    - assets/images/

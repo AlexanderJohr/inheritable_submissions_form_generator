@@ -83,7 +83,7 @@ Create a row in the `survey` table and add a JSON configuration in the `structur
                   "title": "Organic",
                   "subQuestions": [
                     {
-                      "id": "organic-fertilizer_type",
+                      "id": "organic-fertilizer-type",
                       "type": "MultipleChoiceQuestion",
                       "title": "Organic Fertilizer Type",
                       "choices": [
@@ -138,7 +138,7 @@ The configuration supports hierarchical questions and sub-questions, allowing fo
               "title": "Organic",
               "subQuestions": [
                 {
-                  "id": "organic-fertilizer_type",
+                  "id": "organic-fertilizer-type",
                   "type": "MultipleChoiceQuestion",
                   "title": "Organic Fertilizer Type",
                   "choices": [
@@ -221,7 +221,7 @@ The configuration allows you to specify where detailed information (concretizati
               "title": "Organic",
               "subQuestions": [
                 {
-                  "id": "organic-fertilizer_type",
+                  "id": "organic-fertilizer-type",
                   "type": "MultipleChoiceQuestion",
                   "title": "Organic Fertilizer Type",
                   "allowedConcretisations": { "timespan": true },
